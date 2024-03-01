@@ -3,7 +3,7 @@ print("Calculadora Ponderaciones")
 
 # Variables
 # Universidades
-universidad = input("Ingrese Su Universidad (UDEC, UBB, UCH, USACH, PUC): ")
+carrera = input("Ingrese su carrera: ")
 # Porcentajes
 nem = int(input("Ponga su puntaje NEM: "))
 ranking = int(input("Ponga su puntaje Ranking: "))
@@ -13,17 +13,31 @@ lect = int(input("Ponga su puntaje de Competencia lectora: "))
 history = int(input("Ponga su puntaje de Historia: "))
 ciencias = int(input("Ponga su puntaje de Ciencias: "))
 
-if universidad == "UDEC":
-    nemudecinf = nem * 0.20
-    rankingudecinf = ranking * 0.15
-    m1udecinf = m1 * 0.25
-    m2udecinf = m2 * 0.15
-    lectudecinf = lect * 0.15
-    historyudecinf = history * 0
-    cienciasudecinf = ciencias * 0.10
-
-totaludecinf = nemudecinf + rankingudecinf + m1udecinf + \
-    m2udecinf + lectudecinf + historyudecinf + cienciasudecinf
-carrera = input("Escoja su carrera (Informatica, Industrial, Medicina): ")
-if carrera == "Informatica":
-    print(totaludecinf)
+if carrera == ("informatica"):
+    neminf = nem * 0.20
+    rankinginf = ranking * 0.15
+    m1inf = m1 * 0.25
+    m2inf = m2 * 0.15
+    lectinf = lect * 0.15
+    cienciasinf = ciencias * 0.10
+    totalinf = neminf + rankinginf + m1inf + \
+        m2inf + lectinf + cienciasinf
+    infudectotal = input("Quieres ver tu puntaje? (Si/No): ")
+    if infudectotal == ("Si"):
+        print(totalinf)
+    elif infudectotal == ("No"):
+        print("Gracias por usar")
+elif carrera == ("industrial"):
+    nemindu = nem * 0.20
+    rankingindu = ranking * 0.15
+    m1indu = m1 * 0.25
+    m2indu = m2 * 0.15
+    lectindu = lect * 0.15
+    cienciasindu = ciencias * 0.10
+    totalindu = nemindu + rankingindu + m1indu + \
+        m2indu + lectindu + cienciasindu
+    induudectotal = input("Quieres ver tu puntaje? (Si/No): ")
+    if induudectotal == ("Si"):
+        print(totalindu)
+    elif induudectotal == ("No"):
+        print("Gracias por usar")
