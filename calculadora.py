@@ -53,3 +53,15 @@ elif carrera == ("medicina"):
         print(totalmed)
     elif medudectotal == ("No"):
         print("Gracias por usar")
+elif carrera == ("geologia"):
+    nemgeol = nem * 0.15
+    rankingeol = ranking * 0.25
+    m1geol = m1 * 0.30
+    lectgeol = lect * 0.20
+    cienciasgeol = ciencias * 0.10
+    totalgeol = nemgeol + rankingeol + m1geol + lectgeol + cienciasgeol
+    geoludectotal = input("Quieres ver tu puntaje? (Si/No): ")
+    if geoludectotal == ("Si"):
+        print(totalgeol)
+    elif geoludectotal == ("No"):
+        print("Gracias por usar")
