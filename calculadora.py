@@ -3,8 +3,10 @@ print("Calculadora Ponderaciones")
 
 # Variables
 # Universidades
-carrera = input("Ingrese su carrera: ")
-universidad = input("Ingrese su universidad: ")
+carrera = input(
+    "Ingrese su carrera (informatica, industrial, medicina, geologia, comercial): ")
+universidad = input(
+    "Ingrese su universidad (UDEC, UBB, UDD, UNAB, UCSC, UCH, PUC, PUCV, USM, UST, USS): ")
 # Porcentajes
 nem = int(input("Ponga su puntaje NEM: "))
 ranking = int(input("Ponga su puntaje Ranking: "))
@@ -28,7 +30,7 @@ if carrera == ("informatica") and universidad == ("UDEC"):
         print(totalinf)
     elif infudectotal == ("No"):
         print("Gracias por usar")
-elif carrera == ("industrial"):
+elif carrera == ("industrial") and universidad == ("UDEC"):
     nemindu = nem * 0.20
     rankingindu = ranking * 0.15
     m1indu = m1 * 0.25
@@ -42,7 +44,7 @@ elif carrera == ("industrial"):
         print(totalindu)
     elif induudectotal == ("No"):
         print("Gracias por usar")
-elif carrera == ("medicina"):
+elif carrera == ("medicina") and universidad == ("UDEC"):
     nemmed = nem * 0.15
     rankingmed = ranking * 0.25
     m1med = m1 * 0.35
@@ -54,7 +56,7 @@ elif carrera == ("medicina"):
         print(totalmed)
     elif medudectotal == ("No"):
         print("Gracias por usar")
-elif carrera == ("geologia"):
+elif carrera == ("geologia") and universidad == ("UDEC"):
     nemgeol = nem * 0.15
     rankingeol = ranking * 0.25
     m1geol = m1 * 0.30
@@ -66,7 +68,7 @@ elif carrera == ("geologia"):
         print(totalgeol)
     elif geoludectotal == ("No"):
         print("Gracias por usar")
-elif carrera == ("comercial"):
+elif carrera == ("comercial") and universidad == ("UDEC"):
     nemingeco = nem * 0.15
     rankingingeco = ranking * 0.25
     m1ingeco = m1 * 0.30
@@ -81,3 +83,18 @@ elif carrera == ("comercial"):
         print(totalingeco)
     elif totaludecingeco == ("No"):
         print("Gracias por usar")
+elif carrera == ("informatica") and universidad == ("UBB"):
+    neminfubb = nem * 0.10
+    rankinginfubb = ranking * 0.40
+    m1infubb = m1 * 0.15
+    m2infubb = m2 * 0.10
+    lectinfubb = lect * 0.15
+    historyinfubb = history * 0.10
+    cienciasinfubb = ciencias * 0.10
+    totalinfubb = neminfubb + rankinginfubb + m1infubb + \
+        m2infubb + lectinfubb + historyinfubb + cienciasinfubb
+    infubbtotal = input("Quieres ver tu puntaje? (Si/No): ")
+    if infubbtotal == ("Si"):
+        print(totalinfubb)
+    elif infubbtotal == ("No"):
+        print("Gracias por usar.")
