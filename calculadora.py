@@ -4,6 +4,7 @@ print("Calculadora Ponderaciones")
 # Variables
 # Universidades
 carrera = input("Ingrese su carrera: ")
+universidad = input("Ingrese su universidad: ")
 # Porcentajes
 nem = int(input("Ponga su puntaje NEM: "))
 ranking = int(input("Ponga su puntaje Ranking: "))
@@ -13,7 +14,7 @@ lect = int(input("Ponga su puntaje de Competencia lectora: "))
 history = int(input("Ponga su puntaje de Historia: "))
 ciencias = int(input("Ponga su puntaje de Ciencias: "))
 
-if carrera == ("informatica"):
+if carrera == ("informatica") and universidad == ("UDEC"):
     neminf = nem * 0.20
     rankinginf = ranking * 0.15
     m1inf = m1 * 0.25
