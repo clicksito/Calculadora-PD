@@ -98,3 +98,20 @@ elif carrera == ("informatica") and universidad == ("UBB"):
         print(totalinfubb)
     elif infubbtotal == ("No"):
         print("Gracias por usar.")
+elif carrera == ("industrial") and universidad == ("UBB"):
+    nem_industrial_ubb = nem * 0.10
+    ranking_industrial_ubb = ranking * 0.50
+    m1_industrial_ubb = m1 * 0.10
+    m2_industrial_ubb = m2 * 0.10
+    lect_industrial_ubb = lect * 0.10
+    history_industrial_ubb = history * 0.10
+    ciencias_industrial_ubb = ciencias * 0.10
+    total_ind_ubb = m1_industrial_ubb + m2_industrial_ubb + nem_industrial_ubb + \
+        ranking_industrial_ubb + lect_industrial_ubb + \
+        history_industrial_ubb + ciencias_industrial_ubb
+    indubb_total = input("Quieres ver tu puntaje? (Si/No): ")
+    if indubb_total == ("Si"):
+        print(total_ind_ubb)
+    elif indubb_total == ("No"):
+        print("Gracias por usar")
+input("Presione enter para salir")
