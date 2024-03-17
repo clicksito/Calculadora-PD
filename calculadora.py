@@ -1,4 +1,5 @@
 # Titulo
+
 print("Calculadora Ponderaciones")
 
 # Variables
@@ -114,4 +115,4 @@ elif carrera == ("industrial") and universidad == ("UBB"):
         print(total_ind_ubb)
     elif indubb_total == ("No"):
         print("Gracias por usar")
-input("Presione enter para salir")
+input("presione enter para salir".capitalize())
